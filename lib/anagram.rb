@@ -26,6 +26,9 @@ class Anagram
     end
    
 
+    #binding.pry
+   splitAnagram.detect(splitWord)
+
   end
   
   
