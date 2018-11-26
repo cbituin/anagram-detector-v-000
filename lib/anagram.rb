@@ -13,6 +13,8 @@ class Anagram
   def match(array)
     #iterate over array 
     #compare each element of array to @word
+    
+    newArray = []
 
     splitWord = @word.split("").sort
 
@@ -23,13 +25,12 @@ class Anagram
 # binding.pry
 
     if splitWord === splitAnagram
-      anagrams
+      newArray << anagrams
     end
       
-    splitAnagram.detect(splitWord)
-
     end
-
+    
+    newArray
   end
   
   
