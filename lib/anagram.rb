@@ -16,13 +16,11 @@ class Anagram
 
     splitWord = @word.split("").sort
 
-    array.map do |anagrams|
+    array.each do |anagrams|
     splitAnagram = anagrams.split("").sort
 # binding.pry
     if splitWord === splitAnagram
       anagrams
-    else
-      false
     end
       
     end
