@@ -18,7 +18,7 @@ class Anagram
 
     array.map do |anagrams|
     splitAnagram = anagrams.split("").sort
-# binding.pry
+binding.pry
     if splitWord == splitAnagram
       anagrams
     end
