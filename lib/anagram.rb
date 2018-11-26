@@ -17,17 +17,18 @@ class Anagram
     splitWord = @word.split("").sort
 
     array.each do |anagrams|
+
     splitAnagram = anagrams.split("").sort
+
 # binding.pry
+
     if splitWord === splitAnagram
       anagrams
     end
       
-    end
-   
+    splitAnagram.detect(splitWord)
 
-    #binding.pry
-  # splitAnagram.detect(splitWord)
+    end
 
   end
   
