@@ -21,6 +21,8 @@ class Anagram
 # binding.pry
     if splitWord === splitAnagram
       anagrams
+    else
+      false
     end
       
     end
