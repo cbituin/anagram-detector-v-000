@@ -17,9 +17,9 @@ class Anagram
     splitWord = @word.split("").sort
 
     array.map do |anagrams|
-    # splitAnagram = anagrams.split("").sort
+    splitAnagram = anagrams.split("").sort
 # binding.pry
-    if splitWord ===  anagrams.split("").sort
+    if splitWord === splitAnagram
       anagrams
     end
       
